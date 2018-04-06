@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Evevoni pplication Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Evevoni App Test Cases">
+		<classes>
+			
+			<class name="com.evevoni.qa.testcases.HomePageTest"></class>
+			<class name="com.evevoni.qa.testcases.MyAccountPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

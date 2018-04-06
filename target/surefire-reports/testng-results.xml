@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="106922" started-at="2018-03-29T13:33:59Z" finished-at="2018-03-29T13:35:46Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="106922" started-at="2018-03-29T13:33:59Z" finished-at="2018-03-29T13:35:46Z">
+      <class name="com.evevoni.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.evevoni.qa.testcases.HomePageTest@5cc7c2a6]" name="setUp" is-config="true" duration-ms="15181" started-at="2018-03-29T14:34:18Z" finished-at="2018-03-29T14:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCorrectUserNameTest()[pri:1, instance:com.evevoni.qa.testcases.HomePageTest@5cc7c2a6]" name="verifyCorrectUserNameTest" duration-ms="45" started-at="2018-03-29T14:34:33Z" finished-at="2018-03-29T14:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectUserNameTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evevoni.qa.testcases.HomePageTest@5cc7c2a6]" name="tearDown" is-config="true" duration-ms="435" started-at="2018-03-29T14:34:33Z" finished-at="2018-03-29T14:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.evevoni.qa.testcases.HomePageTest -->
+      <class name="com.evevoni.qa.testcases.MyAccountPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="setUp" is-config="true" duration-ms="10077" started-at="2018-03-29T14:34:34Z" finished-at="2018-03-29T14:34:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="accountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="accountRegistration" duration-ms="8970" started-at="2018-03-29T14:34:44Z" data-provider="getEvevoniTestData" finished-at="2018-03-29T14:34:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gab234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gab234@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gab]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[White]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[GB]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[WE3 9YH]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[07543234337]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="159" started-at="2018-03-29T14:34:53Z" finished-at="2018-03-29T14:34:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="setUp" is-config="true" duration-ms="11137" started-at="2018-03-29T14:34:53Z" finished-at="2018-03-29T14:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="accountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="accountRegistration" duration-ms="8250" started-at="2018-03-29T14:35:05Z" data-provider="getEvevoniTestData" finished-at="2018-03-29T14:35:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vivin234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vivin234@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vivin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10005]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0051698435638]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="212" started-at="2018-03-29T14:35:13Z" finished-at="2018-03-29T14:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="setUp" is-config="true" duration-ms="11203" started-at="2018-03-29T14:35:13Z" finished-at="2018-03-29T14:35:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="accountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="accountRegistration" duration-ms="8769" started-at="2018-03-29T14:35:24Z" data-provider="getEvevoniTestData" finished-at="2018-03-29T14:35:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[peter234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[peter234@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Peter]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Yellow]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Turkey]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TKCA 1ZZ]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4443267]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="246" started-at="2018-03-29T14:35:33Z" finished-at="2018-03-29T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="setUp" is-config="true" duration-ms="10753" started-at="2018-03-29T14:35:33Z" finished-at="2018-03-29T14:35:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="accountLoginTest()[pri:2, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="accountLoginTest" duration-ms="2152" started-at="2018-03-29T14:35:44Z" finished-at="2018-03-29T14:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evevoni.qa.testcases.MyAccountPageTest@b97c004]" name="tearDown" is-config="true" duration-ms="152" started-at="2018-03-29T14:35:46Z" finished-at="2018-03-29T14:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.evevoni.qa.testcases.MyAccountPageTest -->
+      <class name="com.evevoni.qa.testcases.CartPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.evevoni.qa.testcases.CartPageTest@3c09711b]" name="setUp" is-config="true" duration-ms="12833" started-at="2018-03-29T14:33:59Z" finished-at="2018-03-29T14:34:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkItemsInCart()[pri:1, instance:com.evevoni.qa.testcases.CartPageTest@3c09711b]" name="checkItemsInCart" duration-ms="5721" started-at="2018-03-29T14:34:12Z" finished-at="2018-03-29T14:34:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkItemsInCart -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.evevoni.qa.testcases.CartPageTest@3c09711b]" name="tearDown" is-config="true" duration-ms="198" started-at="2018-03-29T14:34:18Z" finished-at="2018-03-29T14:34:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.evevoni.qa.testcases.CartPageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
