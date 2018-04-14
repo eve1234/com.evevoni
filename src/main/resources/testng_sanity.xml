@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Evevoni pplication Test Automation Test Suite">
+<suite name="Evevoni application Test Automation Test Suite">
 
 	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />

@@ -11,8 +11,7 @@ import com.evevoni.qa.pages.MyAccountPage;
 import com.evevoni.qa.util.TestUtil;
 import java.io.IOException;
 
-
-
+import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -32,6 +31,7 @@ public class MyAccountPageTest extends TestBase{
     
     String sheetName = "newUserRegisters";
     String sheetName2 = "userlogins";
+    Logger log= Logger.getLogger(MyAccountPageTest.class);
     
     public MyAccountPageTest(){
         super();
@@ -40,6 +40,7 @@ public class MyAccountPageTest extends TestBase{
     @BeforeMethod
     public void setUp() throws InterruptedException{
         initialization();
+        log.info("Loading browser");
         testUtil = new TestUtil();
         homePage = new HomePage();
         myAccountPage = new MyAccountPage();
@@ -94,7 +95,7 @@ public class MyAccountPageTest extends TestBase{
     
    @Test(priority=1, dataProvider="getEvevoniTestData")
    public void accountRegistration(String regEmail, String regPsswd, String billingFirstName, String billingLastNameField, String billingCountryField, String billingCity, String billingPostcode, String billingPhoneField) throws InterruptedException {
-   
+	   log.info("************ Performaning data Driven test ******************" );
        //Integer phNUm = Integer.parseInt(billingPhoneField);
        //System.out.println(phNUm);
        //Integer postCd = Integer.parseInt(billingPhoneField);
@@ -105,6 +106,7 @@ public class MyAccountPageTest extends TestBase{
     }
    
    @Test(priority=2)
+   //retryAnalyzer=com.evevoni.qa.analyzer.RetryAnalyzer.class)
    public void accountLoginTest(){
        myAccountPage = myAccountPage.login(prop.getProperty("username"), prop.getProperty("password"));
        
@@ -114,6 +116,7 @@ public class MyAccountPageTest extends TestBase{
     public void tearDown(){
        
       driver.quit();
+      log.info("************Browser is closed ******************" );
     }
 
 

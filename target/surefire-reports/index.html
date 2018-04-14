@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.HomePageTest" hash-for-method="verifyCorrectUserNameTest">verifyCorrectUserNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,11 +121,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.MyAccountPageTest" hash-for-method="accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)">accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.MyAccountPageTest" hash-for-method="accountRegistration(gab234@gmail.com, gab234@gmail.com, Gab, White, GB, London, WE3 9YH, 07543234337)">accountRegistration(gab234@gmail.com, gab234@gmail.com, Gab, White, GB, London, WE3 9YH, 07543234337)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -122,12 +131,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.CartPageTest" hash-for-method="checkItemsInCart">checkItemsInCart</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.MyAccountPageTest" hash-for-method="accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)">accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.HomePageTest" hash-for-method="verifyCorrectUserNameTest">verifyCorrectUserNameTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.evevoni.qa.testcases.CartPageTest" hash-for-method="checkItemsInCart">checkItemsInCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -142,6 +151,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.evevoni.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCorrectUserNameTest">
+                  </a> <!-- verifyCorrectUserNameTest -->
+                  <span class="method-name">verifyCorrectUserNameTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/p[1]/strong[1]&quot;}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Yvonnes-MBP&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.3&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir=/var/folders/90/hk54t8xs39q07xsrvbcv14hc0000gn/T/.org.chromium.Chromium.movRGn}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ff25a67344afa3bd4368fb913cfb827e
+*** Element info: {Using=xpath, value=//div/p[1]/strong[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at com.evevoni.qa.pages.HomePage.verifyCorrectUserName(HomePage.java:71)
+	at com.evevoni.qa.testcases.HomePageTest.verifyCorrectUserNameTest(HomePageTest.java:90)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -172,14 +229,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)">
-                  </a> <!-- accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267) -->
-                  <span class="method-name">accountRegistration</span>
-                  <span class="parameters">(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="accountRegistration(gab234@gmail.com, gab234@gmail.com, Gab, White, GB, London, WE3 9YH, 07543234337)">
                   </a> <!-- accountRegistration(gab234@gmail.com, gab234@gmail.com, Gab, White, GB, London, WE3 9YH, 07543234337) -->
                   <span class="method-name">accountRegistration</span>
@@ -194,19 +243,12 @@
                   <span class="parameters">(vivin234@gmail.com, vivin234@gmail.com, Vivin, Brown, US, New York, 10005, 0051698435638)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.evevoni.qa.testcases.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCorrectUserNameTest">
-                  </a> <!-- verifyCorrectUserNameTest -->
-                  <span class="method-name">verifyCorrectUserNameTest</span>
+                  <a name="accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)">
+                  </a> <!-- accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267) -->
+                  <span class="method-name">accountRegistration</span>
+                  <span class="parameters">(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,34 +309,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'accountRegistration')
-data.setCell(0, 2, 'com.evevoni.qa.testcases.MyAccountPageTest')
-data.setCell(0, 3, 8970);
+data.setCell(0, 1, 'verifyCorrectUserNameTest')
+data.setCell(0, 2, 'com.evevoni.qa.testcases.HomePageTest')
+data.setCell(0, 3, 21420);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'accountRegistration')
 data.setCell(1, 2, 'com.evevoni.qa.testcases.MyAccountPageTest')
-data.setCell(1, 3, 8769);
+data.setCell(1, 3, 8679);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'accountRegistration')
 data.setCell(2, 2, 'com.evevoni.qa.testcases.MyAccountPageTest')
-data.setCell(2, 3, 8250);
+data.setCell(2, 3, 8431);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkItemsInCart')
-data.setCell(3, 2, 'com.evevoni.qa.testcases.CartPageTest')
-data.setCell(3, 3, 5721);
+data.setCell(3, 1, 'accountRegistration')
+data.setCell(3, 2, 'com.evevoni.qa.testcases.MyAccountPageTest')
+data.setCell(3, 3, 6977);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'accountLoginTest')
-data.setCell(4, 2, 'com.evevoni.qa.testcases.MyAccountPageTest')
-data.setCell(4, 3, 2152);
+data.setCell(4, 1, 'checkItemsInCart')
+data.setCell(4, 2, 'com.evevoni.qa.testcases.CartPageTest')
+data.setCell(4, 3, 6246);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyCorrectUserNameTest')
-data.setCell(5, 2, 'com.evevoni.qa.testcases.HomePageTest')
-data.setCell(5, 3, 45);
+data.setCell(5, 1, 'accountLoginTest')
+data.setCell(5, 2, 'com.evevoni.qa.testcases.MyAccountPageTest')
+data.setCell(5, 3, 2253);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -327,77 +369,79 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkItemsInCart</span>
-                <span class="method-start">12833 ms</span>
+                <span class="method-start">37673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18554 ms</span>
+                <span class="method-start">43920 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.evevoni.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18753 ms</span>
+                <span class="method-start">44183 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyCorrectUserNameTest</span>
-                <span class="method-start">33934 ms</span>
+                <span class="method-start">58414 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33979 ms</span>
+                <span class="method-start">79839 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.evevoni.qa.testcases.MyAccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">34809 ms</span>
+                <span class="method-start">80285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">accountRegistration(gab234@gmail.com, gab234@gmail.com, Gab, White, GB, London, WE3 9YH, 07543234337)</span>
-                <span class="method-start">44886 ms</span>
+                <span class="method-start">93006 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53856 ms</span>
+                <span class="method-start">99983 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">54015 ms</span>
+                <span class="method-start">100214 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">accountRegistration(vivin234@gmail.com, vivin234@gmail.com, Vivin, Brown, US, New York, 10005, 0051698435638)</span>
-                <span class="method-start">65152 ms</span>
+                <span class="method-start">112017 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73402 ms</span>
+                <span class="method-start">120449 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">73614 ms</span>
+                <span class="method-start">120621 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">accountRegistration(peter234@gmail.com, peter234@gmail.com, Peter, Yellow, TR, Turkey, TKCA 1ZZ, 4443267)</span>
-                <span class="method-start">84817 ms</span>
+                <span class="method-start">132916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">93586 ms</span>
+                <span class="method-start">141596 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">93833 ms</span>
+                <span class="method-start">141834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">accountLoginTest</span>
-                <span class="method-start">104586 ms</span>
+                <span class="method-start">153303 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">106738 ms</span>
+                <span class="method-start">155556 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

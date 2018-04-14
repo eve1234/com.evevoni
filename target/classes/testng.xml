@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Evevoni pplication Test Automation Test Suite">
+<suite name="Evevoni application Automation Test Suite">
 
 	<listeners>
 		<listener class-name="com.evevoni.qa.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.evevoni.qa.analyzer.MyTransformer" />
 	</listeners>
 
 

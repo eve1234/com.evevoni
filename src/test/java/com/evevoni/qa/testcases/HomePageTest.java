@@ -8,6 +8,9 @@ import com.evevoni.qa.pages.MyAccountPage;
 import com.evevoni.qa.pages.SubscribeToOurNewsLettersPage;
 import com.evevoni.qa.pages.WigCapOffersPage;
 import com.evevoni.qa.util.TestUtil;
+
+import org.apache.log4j.Logger;
+import org.eclipse.jetty.util.log.Log;
 import org.junit.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -28,6 +31,7 @@ public class HomePageTest extends TestBase{
     SubscribeToOurNewsLettersPage  subscribeToOurNewsLettersPage;
     WigCapOffersPage wigCapOffersPage;
     TestUtil testUtil;
+    Logger log= Logger.getLogger(MyAccountPageTest.class);
     
     public HomePageTest(){
         super();
@@ -88,6 +92,7 @@ public class HomePageTest extends TestBase{
      @Test(priority=1)
      public void verifyCorrectUserNameTest(){
          Assert.assertTrue(homePage.verifyCorrectUserName());
+        //log.info(" User is login as " + homePage.userNameLable);
      }
     /*
     @Test(priority=1)

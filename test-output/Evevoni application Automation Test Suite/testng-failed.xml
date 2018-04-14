@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Evevoni application Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.evevoni.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.evevoni.qa.analyzer.MyTransformer"/>
+  </listeners>
+  <test name="Evevoni App Test Cases(failed)">
+    <classes>
+      <class name="com.evevoni.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyCorrectUserNameTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.evevoni.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Evevoni App Test Cases(failed) -->
+</suite> <!-- Failed suite [Evevoni application Automation Test Suite] -->

@@ -16,7 +16,7 @@ public class HomePage extends TestBase{
    // @FindBy(xpath="//strong[contains(text(), 'MyName')]")
     @FindBy(xpath="//div/p[1]/strong[1]")
     @CacheLookup
-    WebElement userNameLable;
+    public WebElement userNameLable;
     
     @FindBy(id="menu-item-517")
     WebElement WigCapOffers;
@@ -68,6 +68,7 @@ public class HomePage extends TestBase{
     //if logout button is on display
     public boolean verifyCorrectUserName(){
         
+    	System.out.println("User is login as " + userNameLable);
         return userNameLable.isDisplayed();
           
     }
